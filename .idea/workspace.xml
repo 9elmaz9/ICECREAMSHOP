@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3c56828-e9c1-44e6-b1bc-c5fb5365e4c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ICECREAMSHOP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/application/IceCreamApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/eatables/Cone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/eatables/Eatable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/eatables/IceRocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/eatables/Magnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/IceCreamCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/IceCreamSalon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/IceCreamSeller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/PriceList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/Profitable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/Stock.java" afterDir="false" />
-    </list>
+    <list default="true" id="d3c56828-e9c1-44e6-b1bc-c5fb5365e4c7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,15 +32,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Intec/MavenProjects/ICECREAMSHOP/src",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Intec/MavenProjects/ICECREAMSHOP/src&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Intec\MavenProjects\ICECREAMSHOP\src" />
