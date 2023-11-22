@@ -5,7 +5,7 @@ import be.intecbrussel.eatables.*;
 public class IceCreamSalon implements IceCreamSeller {
     //properties
     private PriceList priceList;
-    private double totalProfit;
+    private double totalProfit=0;
 
 
     //constructor
@@ -24,35 +24,37 @@ public class IceCreamSalon implements IceCreamSeller {
     }
 
 
-    @Override
-    public double getProfit() {
-        return totalProfit;
-    }
 
     @Override
     public Cone orderCone(Cone.Flavor[] flavors) {
+        Cone cone=new Cone(flavors);
         if (flavors != null && flavors.length > 0) {
             //totalProfit += priceList.getBallPrice() * 0.25;
            // totalProfit += priceList.getBallPrice() * flavors.length;
-            totalProfit += priceList.getBallPrice() * flavors.length * 0.25;
-        } else {
+            for (int i = 0; i < flavors.length; i++) {
+           // totalProfit += priceList.getBallPrice() * flavors.length * 0.25;
             totalProfit += priceList.getBallPrice();
         }
-        return new Cone(flavors);
+        //   else {
+        //   totalProfit += priceList.getBallPrice();
+        }
+        return cone;
     }
 
     @Override
     public IceRocket orderIceRocket() {
         //IceRocket newIce=new IceRocket();
-        totalProfit += priceList.getRocketPrice() * 0.20;
+        totalProfit += priceList.getRocketPrice(); //* 0.20;
        // totalProfit += priceList.getRocketPrice() ;
         return new IceRocket();
     }
 
+
+
     @Override
     public Magnum orderMagnum(Magnum.MagnumType type) {
         //Magnum newMagnum = new Magnum();
-       totalProfit += priceList.getMagnumPrice(type) * 0.01;
+       totalProfit += priceList.getMagnumPrice(type); // * 0.01;
         //totalProfit += priceList.getMagnumPrice(type) ;
         return new Magnum(type);
     }
@@ -64,4 +66,9 @@ public class IceCreamSalon implements IceCreamSeller {
                 ", totalProfit=" + totalProfit +
                 '}';
     }
+    @Override
+    public double getProfit() {
+        return totalProfit;
+    }
+
 }

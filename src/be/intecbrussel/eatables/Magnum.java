@@ -6,12 +6,12 @@ public class Magnum implements Eatable {
         MILKCHOCOLATE,
         WHITECHOCOLATE,
         BLACKCHOCOLATE,
-        ALPINENUTS,
+        ALPINENUTS, //1.5
         ROMANTICSTRAWBERRIES;}
 
 
     //Properties
-    public MagnumType type;
+    private MagnumType type;
 
     //Constructors
     public Magnum() {
@@ -21,16 +21,19 @@ public class Magnum implements Eatable {
         this.type = type;
     }
 
-    public MagnumType getType() { // etogo net v UML
-        return type;
-    }
+ //  public MagnumType getType() { // etogo net v UML
+ //      return type;
+ //  }     nichego ne delaet  , potom delet sdelat
 
 
     //eatable method
-    @Override
-    public void eat() {
-        System.out.println("EAT me"+ type.toString().length()+" "); //??????
+ @Override
+ public void eat() {
+     System.out.println("You are eating magnum with flavor" + type ) ; // type.toString().length()+" "); //??????
 
+    }
+    public MagnumType getType(){
+        return type;
     }
 }
 

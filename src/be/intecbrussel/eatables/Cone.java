@@ -1,5 +1,7 @@
 package be.intecbrussel.eatables;
 
+import java.util.Arrays;
+
 public class Cone implements Eatable {
       public enum Flavor{
 
@@ -29,7 +31,7 @@ public class Cone implements Eatable {
     //eatable method
     @Override
     public void eat() {
-        System.out.println("EAT me");
+        System.out.println("You are eating a Cone with :" + Arrays.toString(balls)); // Flavor.PISTACHE);
 
     }
 }
