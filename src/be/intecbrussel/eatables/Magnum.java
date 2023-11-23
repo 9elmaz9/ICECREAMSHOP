@@ -2,18 +2,16 @@ package be.intecbrussel.eatables;
 
 public class Magnum implements Eatable {
 
-    public enum MagnumType{
+    public enum MagnumType {
         MILKCHOCOLATE,
         WHITECHOCOLATE,
         BLACKCHOCOLATE,
         ALPINENUTS, //1.5
-        ROMANTICSTRAWBERRIES;}
+        ROMANTICSTRAWBERRIES;
+    }
 
-
-    //Properties
     private MagnumType type;
 
-    //Constructors
     public Magnum() {
     }
 
@@ -21,18 +19,16 @@ public class Magnum implements Eatable {
         this.type = type;
     }
 
- //  public MagnumType getType() { // etogo net v UML
- //      return type;
- //  }     nichego ne delaet  , potom delet sdelat
-
-
     //eatable method
- @Override
- public void eat() {
-     System.out.println("You are eating magnum with flavor" + type ) ; // type.toString().length()+" "); //??????
+    @Override
+    public void eat() {
+        System.out.println("***");
+        System.out.println("You are eating Magnum with flavor :" + type); // type.toString().length()+" ");
+        System.out.println("***");
 
     }
-    public MagnumType getType(){
+
+    public MagnumType getType() {
         return type;
     }
 }

@@ -4,7 +4,6 @@ import be.intecbrussel.sellers.IceCreamSalon;
 
 public class IceRocket implements Eatable {
 
-    //Constructor
 
     public IceRocket() {
     }
@@ -12,7 +11,10 @@ public class IceRocket implements Eatable {
     //eatable method
     @Override
     public void eat() {
-        System.out.println("You are zating an Ice Ricket");
+        System.out.println("***");
+        System.out.println("You are eating an Ice Rocket");
+        System.out.println("***");
+
 
     }
 }

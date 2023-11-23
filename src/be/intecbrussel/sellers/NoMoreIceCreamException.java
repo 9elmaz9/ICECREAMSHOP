@@ -2,12 +2,13 @@ package be.intecbrussel.sellers;
 
 public class NoMoreIceCreamException extends Exception {
 
-    public boolean printStackTrace;
+ public boolean printStackTrace;
 
-    public NoMoreIceCreamException() {
-    }
+ public NoMoreIceCreamException() {
+ }
 
-    public NoMoreIceCreamException (String message) {
-        super(message);
-    }
+ public NoMoreIceCreamException (String message) {
+     super(message);
+  System.out.println(message);
+ }
 }

@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3c56828-e9c1-44e6-b1bc-c5fb5365e4c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/application/IceCreamApp2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/NoMoreIceCreamException.java" afterDir="false" />
+    <list default="true" id="d3c56828-e9c1-44e6-b1bc-c5fb5365e4c7" name="Changes" comment="h">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/application/IceCreamApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/application/IceCreamApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/application/IceCreamApp2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/application/IceCreamApp2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/eatables/Cone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/eatables/Cone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/eatables/IceRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/eatables/IceRocket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/eatables/Magnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/eatables/Magnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/sellers/IceCreamCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/IceCreamCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/sellers/IceCreamSalon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/IceCreamSalon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/sellers/IceCreamSeller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/IceCreamSeller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/sellers/NoMoreIceCreamException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/NoMoreIceCreamException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/sellers/PriceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/PriceList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/sellers/Profitable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/Profitable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/sellers/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/sellers/Stock.java" afterDir="false" />
@@ -63,7 +63,7 @@
       <recent name="C:\Users\Intec\MavenProjects\ICECREAMSHOP\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IceCreamApp2">
+  <component name="RunManager" selected="Application.IceCreamApp">
     <configuration name="IceCreamApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.intecbrussel.application.IceCreamApp" />
       <module name="ICECREAMSHOP" />
@@ -92,8 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IceCreamApp2" />
         <item itemvalue="Application.IceCreamApp" />
+        <item itemvalue="Application.IceCreamApp2" />
       </list>
     </recent_temporary>
   </component>
@@ -106,6 +106,14 @@
       <option name="presentableId" value="Default" />
       <updated>1700472705238</updated>
     </task>
+    <task id="LOCAL-00001" summary="h">
+      <created>1700665071410</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700665071411</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +126,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="h" />
+    <option name="LAST_COMMIT_MESSAGE" value="h" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -134,11 +146,6 @@
           <url>file://$PROJECT_DIR$/src/be/intecbrussel/sellers/IceCreamCar.java</url>
           <line>4</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/be/intecbrussel/application/IceCreamApp2.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

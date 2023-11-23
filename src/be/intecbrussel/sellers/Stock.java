@@ -1,16 +1,11 @@
 package be.intecbrussel.sellers;
 
 public class Stock {
-
     //properties
     private int iceRockets;
     private int cones;
     private int balls;
     private int magni;
-
- // public Stock(int i, int i1, int i2, int i3) {
- // }
-
 
     //getters and setters
     public int getIceRockets() {

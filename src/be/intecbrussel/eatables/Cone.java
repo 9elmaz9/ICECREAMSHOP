@@ -3,24 +3,23 @@ package be.intecbrussel.eatables;
 import java.util.Arrays;
 
 public class Cone implements Eatable {
-      public enum Flavor{
 
-          STRAWBERRY,
-          BANANA,
-          CHOCOLATE,
-          VANILLA,
-          LEMON,
-          STRACIATELLA,
-          MOKKA,
-          PISTACHE;
+    public enum Flavor {
 
-      }
+        STRAWBERRY,
+        BANANA,
+        CHOCOLATE,
+        VANILLA,
+        LEMON,
+        STRACIATELLA,
+        MOKKA,
+        PISTACHE;
+
+    }
 
 
-    //Properties
     public Flavor[] balls;
 
-    //Constructor
     public Cone() {
     }
 
@@ -31,7 +30,15 @@ public class Cone implements Eatable {
     //eatable method
     @Override
     public void eat() {
-        System.out.println("You are eating a Cone with :" + Arrays.toString(balls)); // Flavor.PISTACHE);
+        System.out.println("You are eating a Cone with   " +balls.length + "flavors : ");
+        for (int i = 0; i < Arrays.stream(balls).count(); i++) {
+
+            System.out.print(balls[i]);
+            if (i < balls.length - 1) {
+                System.out.print(",");
+            }
+        }
+        System.out.println("");
 
     }
 }

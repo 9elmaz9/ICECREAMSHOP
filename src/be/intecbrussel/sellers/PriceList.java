@@ -12,12 +12,12 @@ public class PriceList {
 
     //Constructor
     public PriceList() {
-        // nado li eto ?
-        ballPrice=1;
-        rocketPrice=1;
-        magnumStandardPrice=1.1;
+        ballPrice = 1;
+        rocketPrice = 1;
+        magnumStandardPrice = 1.1;
 
-        System.out.println(String.format("Boll prijs : + %s$ , Rocket pris : %s$ , Magnum Standard prijs :%s $ . Magnum nuts prijs : %s", ballPrice, rocketPrice, magnumStandardPrice,magnumStandardPrice*1.5));
+        System.out.println(String.format("Boll prijs : + %s$ , Rocket pris : %s$ , Magnum Standard prijs :%s $ . Magnum nuts prijs : %s $", ballPrice, rocketPrice, magnumStandardPrice, magnumStandardPrice *1.5));
+        System.out.println("");
 
     }
 
@@ -27,6 +27,7 @@ public class PriceList {
         this.magnumStandardPrice = magnumStandardPrice;
 
     }
+
 
     public void setBallPrice(double ballPrice) {
         this.ballPrice = ballPrice;
@@ -49,18 +50,18 @@ public class PriceList {
     }
 
     public double getMagnumPrice(Magnum.MagnumType type) {
-    // switch (type){
-    //     case ALPINENUTS:
-    //         return 1.5 * magnumStandardPrice;
-    //     default:
-    //         return magnumStandardPrice;
-    // }
-
-        if ( type == Magnum.MagnumType.ALPINENUTS) {
-            magnumStandardPrice*=1.5;
-            //System.out.println("Magnum Alpinnenuts prijs :" +magnumStandardPrice*1.5);
+        switch (type) {
+            case ALPINENUTS:
+                return 1.5 * magnumStandardPrice;
+            default:
+                return magnumStandardPrice;
         }
-        return magnumStandardPrice;
     }
-
 }
+//   public double getMagnumPrice(Magnum.MagnumType type) {
+
+//   if (type == Magnum.MagnumType.ALPINENUTS) {
+//    magnumStandardPrice *= 1.5;
+//    System.out.println("Magnum Alpinnenuts prijs :" +magnumStandardPrice*1.5);
+//    }
+//    return magnumStandardPrice;
