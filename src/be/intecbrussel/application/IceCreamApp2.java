@@ -10,10 +10,11 @@ public class IceCreamApp2 {
     public static void main(String[] args) throws NoMoreIceCreamException {
 
 
-        System.out.println("   Welcome to IceCreamCar");
-        System.out.println("   We offer 3 types ice cream");
-        System.out.println("   -Magnum- \n"
-                        +
+        System.out.println("   'Welcome to IceCreamCar'   ");
+        System.out.println("   We offer 3 types ice cream : ");
+        System.out.println("   -Magnum-    "
+                +
+                "\n" +
                 " MILKCHOCOLATE,\n" +
                 " WHITECHOCOLATE,\n" +
                 " BLACKCHOCOLATE,\n" +
@@ -21,8 +22,9 @@ public class IceCreamApp2 {
                 " ROMANTICSTRAWBERRIES");
 
         System.out.println();
-        System.out.println("   -Hoorntjes- \n"
+        System.out.println("   -Hoorntjes-   "
                 +
+                " \n" +
                 " STRAWBERRY,\n" +
                 " BANANA,\n" +
                 " CHOCOLATE,\n" +
@@ -74,7 +76,7 @@ public class IceCreamApp2 {
 
         System.out.println("\n Total profit of the IceCream Car : " + iceCreamSeller.getProfit() + "$");
         System.out.println();
-        System.out.println("ICE CREAM  STOCK IN WAREHOUSE");
+        System.out.println("ICE CREAM  STOCK IN WAREHOUSE :");
         System.out.println("Stock Ice Rocket :" + stock.getIceRockets());
         System.out.println("Stock Magni :" + stock.getMagni());
         System.out.println("Stock Balls :" + stock.getBalls());

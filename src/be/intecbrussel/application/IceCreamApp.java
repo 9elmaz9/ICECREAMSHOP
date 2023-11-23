@@ -14,26 +14,29 @@ import java.util.Scanner;
 public class IceCreamApp {
     public static void main(String[] args) {
 
-        System.out.println("   Welcome to IceCreamCar");
-        System.out.println("   We offer 3 types ice cream");
-        System.out.println("          -Magnum- \n" +
-                "        MILKCHOCOLATE,\n" +
-                "        WHITECHOCOLATE,\n" +
-                "        BLACKCHOCOLATE,\n" +
-                "        ALPINENUTS, \n" +
-                "        ROMANTICSTRAWBERRIES");
+        System.out.println("   'Welcome to IceCreamCar'  ");
+        System.out.println("   We offer 3 types ice cream : ");
+        System.out.println("          -Magnum-           "
+                +
+                "\n" +
+                " MILKCHOCOLATE,\n" +
+                " WHITECHOCOLATE,\n" +
+                " BLACKCHOCOLATE,\n" +
+                " ALPINENUTS, \n" +
+                " ROMANTICSTRAWBERRIES");
 
         System.out.println();
-        System.out.println("         -Hoorntjes- \n"
+        System.out.println("         -Hoorntjes-        "
                 +
-                "          STRAWBERRY,\n" +
-                "          BANANA,\n" +
-                "          CHOCOLATE,\n" +
-                "          VANILLA,\n" +
-                "          LEMON,\n" +
-                "          STRACIATELLA,\n" +
-                "          MOKKA,\n" +
-                "          PISTACHE");
+                " \n" +
+                " STRAWBERRY,\n" +
+                " BANANA,\n" +
+                " CHOCOLATE,\n" +
+                " VANILLA,\n" +
+                " LEMON,\n" +
+                " STRACIATELLA,\n" +
+                " MOKKA,\n" +
+                " PISTACHE");
         System.out.println();
 
         System.out.println("-Raketijsjes- ");
