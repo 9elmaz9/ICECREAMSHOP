@@ -6,7 +6,6 @@ import be.intecbrussel.eatables.IceRocket;
 import be.intecbrussel.eatables.Magnum;
 import be.intecbrussel.sellers.IceCreamSalon;
 import be.intecbrussel.sellers.IceCreamSeller;
-import be.intecbrussel.sellers.NoMoreIceCreamException;
 import be.intecbrussel.sellers.PriceList;
 
 import java.util.Scanner;
@@ -41,32 +40,36 @@ public class IceCreamApp {
 
         System.out.println("-Raketijsjes- ");
         System.out.println();
+    //System.out.println();
+    //System.out.println(String.format("Boll prijs : + %s$ , Rocket pris : %s$ , Magnum Standard prijs :%s $ . Magnum nuts prijs : %s $"));
+
         System.out.println("     Prise List : ");
 
-        PriceList priceList = new PriceList();
-        IceCreamSalon iceCreamSalon = new IceCreamSalon(priceList);
-        IceCreamSeller iceCreamSeller = iceCreamSalon;
+        PriceList priceList = new PriceList(10,20,100);
+        IceCreamSeller iceCreamSalon = new IceCreamSalon(priceList);
 
 
-        Magnum magnum1 = new Magnum(Magnum.MagnumType.ALPINENUTS);
-        //Magnum magnum2=new Magnum(Magnum.MagnumType.WHITECHOCOLATE);
-        Magnum[] magnum = {iceCreamSalon.orderMagnum(Magnum.MagnumType.ROMANTICSTRAWBERRIES), iceCreamSalon.orderMagnum(Magnum.MagnumType.ALPINENUTS), iceCreamSalon.orderMagnum(Magnum.MagnumType.MILKCHOCOLATE)};
+        Magnum magnum = iceCreamSalon.orderMagnum(Magnum.MagnumType.ROMANTICSTRAWBERRIES);
 
-        //IceRocket iceRocket = new IceRocket();
         IceRocket iceRocket = iceCreamSalon.orderIceRocket();
 
-        Cone.Flavor[] flavors = {Cone.Flavor.CHOCOLATE, Cone.Flavor.BANANA, Cone.Flavor.LEMON};
-        //Cone cone = new Cone(flavors);
-        Cone cone = iceCreamSalon.orderCone(flavors);
+        Cone cone=iceCreamSalon.orderCone(new Cone.Flavor[]{Cone.Flavor.STRAWBERRY,Cone.Flavor.PISTACHE});
+
+        //Cone.Flavor[] flavors = {Cone.Flavor.CHOCOLATE, Cone.Flavor.BANANA, Cone.Flavor.LEMON};
 
 
-        Eatable[] eatables = {iceRocket, cone, magnum[2]};
-        for (int i = 0; i < eatables.length; i++) {
-            eatables[i].eat();
 
+        Eatable[] eatables = {iceRocket, cone, magnum};
+        for (Eatable eatable:eatables){
+            eatable.eat();
         }
 
-        System.out.println("Total profit of the IceCreamSalon:" + iceCreamSeller.getProfit() + "$");
+
+     // for (int i = 0; i < eatables.length; i++) {
+     //     eatables[i].eat();
+     // }
+
+        System.out.println("Total profit of the IceCreamSalon:" + iceCreamSalon.getProfit() + "$");
         System.out.println(iceCreamSalon);
     }
 }
@@ -74,5 +77,18 @@ public class IceCreamApp {
 
 
 
-
+// PriceList priceList = new PriceList(10,20,100);
+//        IceCreamSeller iceCreamSalon = new IceCreamSalon(priceList);
+//
+//        Cone cone = iceCreamSalon.orderCone(new Cone.Flavor[]{Cone.Flavor.CHOCOLATE, Cone.Flavor.PISTACHE});
+//        IceRocket iceRocket = iceCreamSalon.orderIceRocket();
+//        Magnum magnum = iceCreamSalon.orderMagnum(Magnum.MagnumType.ROMANTICSTRAWBERRIES);
+//
+//        Eatable[] icecreams = new Eatable[]{cone, iceRocket, magnum};
+//
+//        for (Eatable icecream : icecreams) {
+//            icecream.eat();
+//        }
+//
+//        System.out.println("PROFIT: " + iceCreamSalon.getProfit());
 

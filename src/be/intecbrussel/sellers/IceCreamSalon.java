@@ -5,13 +5,15 @@ import be.intecbrussel.eatables.*;
 public class IceCreamSalon implements IceCreamSeller {
     //properties
     private PriceList priceList;
-    private double totalProfit = 0;
+    private double totalProfit ;
 
 
 
     public IceCreamSalon(PriceList priceList) {
         this.priceList = priceList;
     }
+
+
 
     public IceCreamSalon(PriceList priceList, double totalProfit) {
         this.priceList = priceList;
@@ -20,26 +22,17 @@ public class IceCreamSalon implements IceCreamSeller {
 
 
     @Override
-    public Cone orderCone(Cone.Flavor[] flavors) {
-        Cone cone = new Cone(flavors);
-        if (flavors != null && flavors.length > 0) {
-
-            for (int i = 0; i < flavors.length; i++) {
-                totalProfit += priceList.getBallPrice() * flavors.length * 0.25;
-                //totalProfit += priceList.getBallPrice();
-            }
-        }
+    public Cone orderCone(Cone.Flavor[] balls) {
+        Cone cone = new Cone(balls);
+        totalProfit += priceList.getBallPrice() * balls.length * 0.25;
         return cone;
     }
 
-    @Override
-    public IceRocket orderRocket() {
-        return null;
-    }
+
 
     @Override
     public IceRocket orderIceRocket() {
-        IceRocket newIce = new IceRocket();
+       //IceRocket newIce = new IceRocket();
         //totalProfit += priceList.getRocketPrice();
         totalProfit += priceList.getRocketPrice() * 0.20;
         return new IceRocket();
@@ -48,20 +41,28 @@ public class IceCreamSalon implements IceCreamSeller {
 
     @Override
     public Magnum orderMagnum(Magnum.MagnumType type) {
-        Magnum newMagnum = new Magnum();
+        Magnum newMagnum = new Magnum(type);
         totalProfit += priceList.getMagnumPrice(type)* 0.01;
         //totalProfit += priceList.getMagnumPrice(type) ;
-        return new Magnum(type);
+        return newMagnum;
     }
 
-    @Override
-    public String toString() {
-        return "You are always welcome in our Ice Cream Salon!";
-    }
+
+
 
     @Override
     public double getProfit() {
         return totalProfit;
     }
-
+    @Override
+    public String toString() {
+        return "You are always welcome in our Ice Cream Salon!";
+    }
 }
+
+// @Override
+//    public String toString() {
+//        return "IceCreamSalon{" +
+//                "priceList=" + priceList +
+//                ", totalProfit=" + totalProfit +
+//                '}';
