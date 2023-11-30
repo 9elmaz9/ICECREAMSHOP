@@ -60,7 +60,7 @@
       <recent name="C:\Users\Intec\MavenProjects\ICECREAMSHOP\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IceCreamApp2">
+  <component name="RunManager" selected="Application.IceCreamApp">
     <configuration name="IceCreamApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.intecbrussel.application.IceCreamApp" />
       <module name="ICECREAMSHOP" />
@@ -89,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IceCreamApp2" />
         <item itemvalue="Application.IceCreamApp" />
+        <item itemvalue="Application.IceCreamApp2" />
       </list>
     </recent_temporary>
   </component>
